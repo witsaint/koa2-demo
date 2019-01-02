@@ -1,5 +1,5 @@
 const Koa = require('koa');
-const route = require('koa-route');
+const route = require('koa-router');
 const app = new Koa();
 
 const about = ctx => {
