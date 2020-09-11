@@ -14,7 +14,7 @@ jobs:
               with:
                 # The target URL
                 # Required: true if custom-config is not set
-                url: http://129.211.162.159:4001
+                url: http://129.211.162.159:4001/person/markAction
 
                 # The request method, basically it's one of GET|POST|PUT|PATCH
                 # Default is GET
