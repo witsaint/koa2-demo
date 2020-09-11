@@ -7,13 +7,16 @@ class mysqlFactory {
     // this.init()
   }
   init() {
+    const {
+      MYSQL_HOST, MYSQL_USER, MYSQL_PASS, MYSQL_DATABASE, MYSQL_PORT
+    } = mysqlConfig[process.env.NODE_ENV || 'dev'];
     !this.mysql_pool &&
     (this.mysql_pool = mysql.createPool({
-      host: mysqlConfig.MYSQL_HOST,
-      user: mysqlConfig.MYSQL_USER,
-      password: mysqlConfig.MYSQL_PASS,
-      database: mysqlConfig.MYSQL_DATABASE,
-      port: mysqlConfig.MYSQL_PORT
+      host: MYSQL_HOST,
+      user: MYSQL_USER,
+      password: MYSQL_PASS,
+      database: MYSQL_DATABASE,
+      port: MYSQL_PORT
     }))
   }
    getDb() {

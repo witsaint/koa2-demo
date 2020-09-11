@@ -8,6 +8,6 @@ const handleRes = async function handleRes (ctx, next) {
     ctx.request.body = Object.assign(resBody.fields, resBody.files)
   }
   // 下一步
-  next()
+  await next()
 }
 module.exports = handleRes
