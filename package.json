@@ -14,7 +14,7 @@
   "author": "Ruan Yifeng",
   "license": "ISC",
   "dependencies": {
-    "exceljs": "^1.4.6",
+    "exceljs": "^1.15.0",
     "koa": "^2.6.2",
     "koa-better-body": "^3.0.4",
     "koa-body": "^2.3.0",
